@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Full-Width Slider</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 500px;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6); /* Darken the image */
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide.active .text-overlay {
+      opacity: 1;
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .arrow {
+      font-size: 50px; /* Increased font size for better visibility */
+      color: #ccc; /* Light gray for better contrast */
+      cursor: pointer;
+      border: none;
+      background: none;
+      outline: none;
+      transition: color 0.3s ease;
+      margin: 0 20px; /* Add margin to arrows */
+    }
+
+    .arrow:hover {
+      color: #fff; /* White color on hover */
+    }
+
+    .lines {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 2;
+    }
+
+    .line {
+      width: 50px;
+      height: 4px;
+      background: #888; /* Inactive line color: Light gray */
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .line.active {
+      background: #fff; /* Active line color: White */
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="Images/Image1.png" alt="Image 1">
+        <div class="text-overlay">This is the first image's text</div>
+      </div>
+      <div class="slide">
+        <img src="Images/Image2.png" alt="Image 2">
+        <div class="text-overlay">This is the second image's text</div>
+      </div>
+      <div class="slide">
+        <img src="Images/Image3.png" alt="Image 3">
+        <div class="text-overlay">This is the third image's text</div>
+      </div>
+    </div>
+    <div class="navigation">
+      <button class="arrow left" style="margin-left: 20px;">&lt;</button>
+      <button class="arrow right" style="margin-right: 20px;">&gt;</button>
+    </div>
+    <div class="lines">
+      <div class="line active" data-slide="0"></div>
+      <div class="line" data-slide="1"></div>
+      <div class="line" data-slide="2"></div>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const lines = document.querySelectorAll('.line');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+    const slidesContainer = document.querySelector('.slides');
+
+    let currentIndex = 0;
+
+    function updateActiveSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+      lines.forEach((line, i) => {
+        line.classList.toggle('active', i === index);
+      });
+      slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateActiveSlide(currentIndex);
+    }
+
+    function previousSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateActiveSlide(currentIndex);
+    }
+
+    function goToSlide(index) {
+      currentIndex = index;
+      updateActiveSlide(currentIndex);
+    }
+
+    // Event Listeners
+    lines.forEach((line, index) => {
+      line.addEventListener('click', () => goToSlide(index));
+    });
+
+    rightArrow.addEventListener('click', nextSlide);
+    leftArrow.addEventListener('click', previousSlide);
+
+    // Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html>

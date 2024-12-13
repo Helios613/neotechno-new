@@ -1,0 +1,78 @@
+headline .headlinecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 12vh;
+    position: relative;
+    padding-top: 100px;
+    padding-left:40px;
+    background-color: #044383;
+    color:white;
+    
+  }
+  
+  career .container {
+      padding: 10px 20px 40px 40px;
+      color:#044383;
+      height:75vh;
+      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+    
+    career .career-left{
+      padding: 50px 10px 40px 20px;
+      text-align: justify;
+      border-radius: 15px;
+    }
+    
+    career  .career-right{
+      padding: 20px 20px 40px 30px;
+      text-align: justify;
+      font-size: 15px;
+      color:#044383;
+      line-height: 1.75;
+    }
+  
+    @media (max-width: 600px) {
+        headline .headlinecontainer {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          height: 10vh;
+          position: relative;
+          width: 100%;
+          height:100%;
+          padding-top: 60px;
+          text-align: center;
+        }
+
+        career .container {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 20px 20px 20px;
+          box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+          height:82vh;
+          align-items: center;
+        }
+    
+        career  .career-left{
+          padding: 5px;
+          text-align: justify;
+          border-radius: 15px;
+        }
+        career  .career-left img{
+          height:100%;
+          width:100%;
+        }
+    
+        career  .career-right{
+          padding: 5px;
+          text-align: justify;
+          font-size: 15px;
+          color:#044383;
+          line-height: 1.75;
+        }
+        career  .career-right h1{
+          font-size: 25px;
+        }
+      }
+  

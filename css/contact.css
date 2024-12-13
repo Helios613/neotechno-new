@@ -1,0 +1,211 @@
+headline .headlinecontainer {
+    display: flex;
+    align-items: Left;
+    justify-content: left;
+    height: 12vh;
+    position: relative;
+    padding-top: 100px;
+    padding-left:60px;
+    background-color: #044383;
+    color:white;
+  }
+
+main-contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+}
+
+/* Create the outer panel with shadow and rounded corners */
+main-contact .panel {
+    display: flex;
+    width: 80%; /* Adjust the width as needed */
+    height: 90%; /* Adjust the height as needed */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow */
+    overflow: hidden; /* To ensure no content spills out of the rounded corners */
+    
+}
+
+/* Left Part of the Panel (Blue Background) */
+main-contact .left {
+    width: 40%;
+    background-color: #044383; /* Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+}
+
+main-contact .left h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+main-contact .left p {
+    margin: 2px 0;
+    font-size: 18px;
+}
+
+main-contact .left a {
+    color:white;
+}
+
+/* Right Part of the Panel (White Background with Form) */
+main-contact .right {
+    width: 60%;
+    background-color: #fff; /* White */
+    padding-left: 40px;
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    color:#044383;
+}
+
+/* Form Styling */
+main-contact .form-group {
+    margin-bottom: 10px;
+    display: table;
+}
+
+main-contact .form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: table-cell;
+    width:100px;
+   
+}
+
+main-contact .form-group input,
+main-contact .form-group textarea {
+    width: 350px;
+    height: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: table-cell;
+}
+
+main-contact .form-group textarea {
+    height: 40px;
+    resize: none; /* Disable resize for textarea */
+    vertical-align:top;
+}
+
+/* Submit Button */
+main-contact .form-group button {
+    background-color: #044383;
+    color: white;
+    width : 250px;
+    font-size: 16px;
+    border: none;
+    margin-left:150px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+
+main-contact .form-group button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Settings */
+@media (max-width: 600px) {
+    headline .headlinecontainer {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        height: 10vh;
+        position: relative;
+        width: 100%;
+        height:100%;
+        padding-top: 70px;
+    }
+
+    main-contact .container {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 5px 5px 5px;
+      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+      height:56vh;
+      width:100%;
+      align-items: center;
+    }
+    main-contact .panel {
+        display: flex;
+        width:350px;
+    }
+    main-contact .left{
+        display: none;
+    }
+    main-contact .right{
+      padding: 5px 5px 5px 15px;
+      text-align: centre;
+      width:100%;
+      font-size: 15px;
+      color:#044383;
+      line-height: 1.75;
+    }
+    main-contact .right h1{
+      font-size: 25px;
+    }
+
+    main-contact .form-group {
+        margin-bottom: 10px;
+        display: table;
+    }
+    
+    main-contact .form-group label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: table-cell;
+        width:100px;
+       
+    }
+    
+    main-contact .form-group input,
+    main-contact .form-group textarea {
+        width: 200px;
+        height: 10px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        display: table-cell;
+    }
+    
+    main-contact .form-group textarea {
+        height: 40px;
+        resize: none; /* Disable resize for textarea */
+        vertical-align:top;
+    }
+    
+    /* Submit Button */
+    main-contact .form-group button {
+        background-color: #044383;
+        color: white;
+        width : 150px;
+        font-size: 15px;
+        border: none;
+        margin-left:100px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        justify-content: center;
+    }
+    
+    main-contact .form-group button:hover {
+        background-color: #2980b9;
+    }
+  }

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoTechnoSoft - Project Management</title>
+  <link rel="icon" href="images\favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    headline .headlinecontainer {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      height: 12vh;
+      position: relative;
+      padding-top: 100px;
+      padding-left:40px;
+      background-color: #044383;
+      color:white; 
+    }
+
+  projmgmt .container {
+    padding: 10px 20px 40px 40px;
+    height:90vh;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  projmgmt .projmgmt-left{
+    padding: 50px 10px 40px 20px;
+    text-align: justify;
+    border-radius: 15px;
+  }
+  
+  projmgmt .projmgmt-right{
+    padding: 20px 20px 40px 10px;
+    text-align: justify;
+    font-size: 15px;
+    color:#044383;
+    line-height: 1.75;
+  }
+
+
+    @media (max-width: 600px) {
+      headline .headlinecontainer {
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      height: 10vh;
+      position: relative;
+      width: 100%;
+      height:100%;
+      padding-top: 60px;
+    }
+    projmgmt .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px 20px 20px;
+      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+      height:110vh;
+      align-items: center;
+    }
+
+    projmgmt .projmgmt-left{
+      height:100%;
+      width: 100%;
+      padding: 10px 20px 10px 20px;
+      text-align: justify;
+      border-radius: 15px;
+    }
+    projmgmt .projmgmt-left img{
+
+      width: 100%;
+    }
+
+    projmgmt .projmgmt-right{
+      padding: 10px 20px 10px 20px;
+      text-align: justify;
+      font-size: 15px;
+      color:#044383;
+      line-height: 1.75;
+      height:100%;
+      width: 100%;
+    
+    }
+    projmgmt .projmgmt-right h1{
+      font-size: 25px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div class="top-bar">
+        <img src="images/phone_icon.png" width="20px" height="20px"> +91 XXXXXXXX    |
+        <img src="images/email_icon.png" width="20px" height="20px"> <a href="mailto:contact@neotechnosoft.com" >contact@neotechnosoft.com</a>
+      </div>
+    <div class="logo-bar">
+      <div class="logo">
+        <a href="index.html"><img src="images\logo1.png" alt="Company Logo"></a> 
+        <img src="images\logo.png" alt="Company Logo"> 
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+           <a href="index.html">Solutions</a>
+            <ul class="submenu">
+              <li><a href="Leadmgmt.html">Lead Management</a></li>
+              <li><a href="Channelpartnermgmt.html">Channel Partner Management</a></li>
+              <li><a href="CustOnboarding.html">Digital Customer OnBoarding</a></li>
+              <li><a href="CustomerService.html">Customer Service Management</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="index.html">Services</a>
+            <ul class="submenu">
+              <li><a href="digitalTrans.html">Digital Transformation</a></li>
+              <li><a href="softdevelopment.html">Software Development</a></li>
+              <li><a href="projmgmt.html">Project Management</a></li>
+              <li><a href="appsupport.html">Application Support</a></li>
+              <li><a href="dbmgmt.html">Database Management</a></li>
+              <li><a href="bidashboard.html">BI / Dashboard</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </li>
+          <li><a href="career.html">Careers</a></li>
+          <li id="menu-item-9936" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-59 current_page_item parent hfe-creative-menu"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <headline>
+    <div class="headlinecontainer">
+      <h2>Project Managemengt</h2>
+    </div>  
+  </headline>
+  <projmgmt>
+    <div class="container">
+        <div class = "projmgmt-left">
+        <img src="images\projmgmt1.png" height="300px" width="474px" class="rounded-image"> 
+    </div>
+        <div class = "projmgmt-right">
+            <h1><font color="red" >Effortless Project Management for Seamless Execution</font></h1>
+            
+            <p>We deliver robust project management solutions to help businesses plan, execute, and achieve their goals efficiently. Our services combine advanced project management tools with proven methodologies like Agile, Scrum, and Waterfall to ensure every phase of your project is executed with precision. From timeline planning and resource allocation to risk management and performance tracking, we provide end-to-end support tailored to your unique needs. Whether you're managing IT projects, software development, or complex business initiatives, our expertise ensures on-time delivery, optimized workflows, and measurable success. </p>
+            <p>Partner with us to take your projects from concept to completion with confidence and clarity.</p>
+            <br>
+            <a class="contactus-button" href="contact.html">
+              <center><button type="submit" max-width=120px><strong>Contact Us</strong></button></center>
+            </a>        
+      </div>
+</div>
+  </projmgmt>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- Left Section: Logo, Company Name, and Address -->
+      <div class="left-section">   
+          <div class="company-info">
+            <img src="images\contact_com_logo.png"  width="200px" height="38px">
+            <br>
+
+              <p>A-217, Tower3 , </p>
+              <p>NX-One, Tech Zone IV</p>
+              <p>Plot No. 17, Gaur Chowk</p>
+              <p>Greater Noida West</p>
+              <p>Uttar Pradesh, India</p>
+              <p>PIN- 201301</p>
+              <br>
+               <p><img src="images/phone_icon.png" width="20px" height="20px"> +91 XXXXXXXX</p>
+               <p><img src="images/email_icon.png" width="20px" height="20px"> <a href="mailto:contact@neotechnosoft.com" >contact@neotechnosoft.com</a></p>
+              
+          </div>
+      <div class="social-media">
+            <a href="#" title="Facebook"><img src="images/facebook.png" alt="Facebook" height = "30px", width=" 30px"></a> <!-- Facebook icon -->
+            <a href="#" title="X"><img src="images/twitter.png" alt="X" height = "30px", width=" 30px"></a> <!-- Twitter icon -->
+            <a href="#" title="Instagram"><img src="images/Youtube.png" alt="Youtube" " height = "30px", width=" 30px"></a> <!-- Instagram icon -->
+            <a href="#" title="LinkedIn"><img src="images/Linkedin.png" alt="Linkedin" height = "30px", width=" 30px"></a> <!-- LinkedIn icon -->
+        </div>
+        <div class="copyright-mobile">
+          &copy; 2024 NeoTechnoSoft. All rights reserved.
+          <a href="privpolicy.html">Privacy Policy </a> 
+          <a href="disclaimer.html">  Disclaimer</a>
+       </div>    
+      </div>
+
+      <!-- Right Section: Navigation Menu -->
+      <div class="right-section">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About Us</a> </li>
+            <li><a href="#">Solutions</a>
+                <ul>
+                  <li><a href="Leadmgmt.html">Lead Management</a></li>
+                  <li><a href="Channelpartnermgmt.html">Channel Partner Management</a></li>
+                  <li><a href="CustOnboarding.html">Digital Customer OnBoarding</a></li>
+                  <li><a href="CustomerService.html">Customer Service Management</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="digitalTrans.html">Digital Transformation</a></li>
+                    <li><a href="softdevelopment.html">Software Development</a></li>
+                    <li><a href="projmgmt.html">Project Management</a></li>
+                    <li><a href="appsupport.html">Application Support</a></li>
+                    <li><a href="dbmgmt.html">Database Management</a></li>
+                    <li><a href="bidashboard.html">BI / Dashboard</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+        <div class="copyright">
+          &copy; 2024 NeoTechnoSoft. All rights reserved.
+          <a href="privpolicy.html">Privacy Policy</a>
+          <a href="disclaimer.html">Disclaimer</a>
+       </div>
+
+      </div>
+  </div>
+
+  <!-- Footer Section -->
+  
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menu = document.querySelector('.menu');
+
+    mobileMenu.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>
