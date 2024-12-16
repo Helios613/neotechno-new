@@ -12,9 +12,9 @@
       display: flex;
       align-items: center;
       justify-content: left;
-      height: 12vh;
+      height: 20px;
       position: relative;
-      padding-top: 100px;
+      padding-top: 0px;
       padding-left:40px;
       background-color: #044383;
       color:white; 
@@ -42,34 +42,43 @@
 
 
     @media (max-width: 600px) {
+
+      
       headline .headlinecontainer {
-      display: flex;
-      align-items: left;
-      justify-content: left;
-      height: 10vh;
-      position: relative;
-      width: 100%;
-      height:100%;
-      padding-top: 60px;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 20px;
+        position: relative;
+        width: 95%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        background-color: #044383;
+        color:white;
+        padding-left:20px;
+      }
+      headline .headlinecontainer h2{
+        font-size: 25px;
+      }
+
     career .container {
       display: flex;
       flex-direction: column;
       padding: 20px 20px 20px 20px;
       box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-      height:100vh;
+      height:100%;
       align-items: center;
     }
 
     career .career-left{
-      height:100%;
+      height:40%;
       width: 100%;
       padding: 10px 20px 10px 20px;
       text-align: justify;
       border-radius: 15px;
     }
     career .career-left img{
-
+      height:100%;
       width: 100%;
     }
 
@@ -84,7 +93,7 @@
     
     }
     career .career-right h1{
-      font-size: 25px;
+      font-size: 20px;
     }
     }
   </style>
@@ -99,7 +108,7 @@
     </div>  
   <div class="logo-bar">
     <div class="logo">
-      <a href="index.html"><img src="images\Logo1.png" alt="Company Logo"></a>
+      <a href="index.html"><img src="images\logo1.png" alt="Company Logo"></a>
       <img src="images\logo.png" alt="Company Logo"> 
     </div>
     <div class="menu-toggle" id="mobile-menu">
@@ -176,9 +185,10 @@
               <p>Uttar Pradesh, India</p>
               <p>PIN- 201301</p>
               <br>
-               <p><img src="images/phone_icon.png" width="20px" height="20px"> +91 XXXXXXXX</p>
-               <p><img src="images/email_icon.png" width="20px" height="20px"> <a href="mailto:contact@neotechnosoft.com" >contact@neotechnosoft.com</a></p>
-              
+              <div class="contact-det">
+                <p><img src="images/phone_icon.png" width="20px" height="20px"> +91 XXXXXXXX</p>
+                <p><img src="images/email_icon.png" width="20px" height="20px"> <a href="mailto:contact@neotechnosoft.com" >contact@neotechnosoft.com</a></p>
+               </div>
           </div>
       <div class="social-media">
             <a href="#" title="Facebook"><img src="images/facebook.png" alt="Facebook" height = "30px", width=" 30px"></a> <!-- Facebook icon -->
@@ -232,9 +242,18 @@
       </div>
   </div>
 
-  <!-- Footer Section -->
-  
-  </footer>
+</footer>   <!-- End Footer Section -->
+
+<foot-bar> <!-- for Mobiles -->
+  <div class="foot-bar">
+    <a href="tel:+91 9167885891"><img src="images/phone_icon.png"></a> 
+    <a href="mailto:contact@neotechnosoft.com" ><img src="images/email_icon.png"> </a>
+    <a href="#" title="Facebook"><img src="images/facebook.png" alt="Facebook" ></a> <!-- Facebook icon -->
+    <a href="#" title="X"><img src="images/twitter.png" alt="X" ></a> <!-- Twitter icon -->
+    <a href="#" title="Instagram"><img src="images/Youtube.png" alt="Youtube"></a> <!-- Instagram icon -->
+    <a href="#" title="LinkedIn"><img src="images/Linkedin.png" alt="Linkedin"></a> <!-- LinkedIn icon -->
+  </div> 
+</foot-bar>
 
   <script>
     const mobileMenu = document.getElementById('mobile-menu');

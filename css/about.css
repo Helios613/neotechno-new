@@ -1,11 +1,11 @@
 
- headline .headlinecontainer {
+ abtheadline .headlinecontainer {
   display: flex;
   align-items: center;
   justify-content: left;
   height: 12vh;
   position: relative;
-  padding-top: 100px;
+  padding-top: 40px;
   padding-left:40px;
   background-color: #044383;
   color:white;
@@ -31,51 +31,6 @@
     font-size: 15px;
     color:#044383;
     line-height: 1.75;
-  }
-
-   
-
-  @media (max-width: 600px) {
-    headline .headlinecontainer {
-      display: flex;
-      align-items: left;
-      justify-content: left;
-      height: 10vh;
-      position: relative;
-      width: 100%;
-      height:100%;
-      padding-top: 60px;
-    }
-    about .container {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 20px 20px 20px;
-      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-      height:110vh;
-      align-items: center;
-    }
-
-    about .about-left{
-      height:330px;
-      padding: 10px 10px 10px 10px;
-      text-align: justify;
-      border-radius: 15px;
-    }
-    about .about-left img{
-      height:100%;
-      width:100%;
-    }
-
-    about .about-right{
-      padding: 10px 10px 10px 10px;
-      text-align: justify;
-      font-size: 15px;
-      color:#044383;
-      line-height: 1.75;
-    }
-    about .about-right h1{
-      font-size: 25px;
-    }
   }
 
   /* For Offerings*/
@@ -221,152 +176,6 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
   }
 
-/* Responsive */
-  @media (max-width: 600px) {
-    about1 .aboutcontainer1 {
-      padding: 20px 10px 10px 10px;
-      height:40vh;
-      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-      position: relative;
-      align-items: center;
-   
-    }
-  
-    about1 .aboutcontainer1 h1 {
-      position: relative; /* Enable positioning for pseudo-element */
-      font-size: 2rem; /* Adjust font size as needed */
-      margin: 5px 0; /* Add space around the heading */
-      font-size: 25px;
-  
-    }
-    
-    about1 .aboutcontainer1 h1::after {
-      content: ""; /* Creates the underline */
-      position: absolute;
-      bottom: -12px; /* Distance below the text */
-      left: 50%; /* Start at the center */
-      transform: translateX(-50%); /* Center align */
-      width: 45%; /* Width of the underline */
-      height: 4px; /* Thickness of the underline */
-      background-color: red; /* Color of the underline (matches text color) */
-      border-radius: 5px; /* Optional: Rounds the edges of the underline */
-    }
-  
-    about1 .offering1 {
-      padding: 20px 5px 5px 5px;
-      height:30%;
-      display:flex;
-      align-items: center;
-    
-    }
-    about1 .offering11 {
-      height:10vh;
-      width:30%;
-      font-size: 15px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      color:#044383;
-      margin-left: 5px;
-      border: 2px solid #044383; /* Default border */
-      border-left: 6px solid #044383; /* Thicker left border */
-      border-bottom: 6px solid #044383; /* Thicker bottom border */
-      border-radius: 10px; /* Optional: Round corners */
-      background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    }
-  
-    about1 .offering12 {
-      height:10vh;
-      width:30%;
-      font-size: 15px;
-      margin-left: 10px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-       color:#044383;
-       border: 2px solid #044383; /* Default border */
-       border-left: 6px solid #044383; /* Thicker left border */
-       border-bottom: 6px solid #044383; /* Thicker bottom border */
-       border-radius: 10px; /* Optional: Round corners */
-       background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
-       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    }
-  
-    about1 .offering13 {
-      height:10vh;
-      width:30%;
-      font-size: 15px;
-      margin-left: 10px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      color:#044383;
-      border: 2px solid #044383; /* Default border */
-      border-left: 6px solid #044383; /* Thicker left border */
-      border-bottom: 6px solid #044383; /* Thicker bottom border */
-      border-radius: 10px; /* Optional: Round corners */
-      background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    }
-  
-    about1 .offering2 {
-      padding: 10px 5px 5px 5px;
-      height:30%;
-      display:flex;
-    }
-    about1 .offering21 {
-      height:10vh;
-      width:30%;
-      font-size: 15px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      margin-left: 5px;
-      color:#044383;
-      border: 2px solid #044383; /* Default border */
-      border-left: 6px solid #044383; /* Thicker left border */
-      border-bottom: 6px solid #044383; /* Thicker bottom border */
-      border-radius: 10px; /* Optional: Round corners */
-      background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    }
-    about1 .offering22 {
-      height:10vh;
-      width:30%;
-      font-size: 15px;
-      margin-left: 10px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      color:#044383;
-      border: 2px solid #044383; /* Default border */
-      border-left: 6px solid #044383; /* Thicker left border */
-      border-bottom: 6px solid #044383; /* Thicker bottom border */
-      border-radius: 10px; /* Optional: Round corners */
-      background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    }
-    about1 .offering23 {
-      height:10vh;
-      width:30%;
-      font-size: 15px;
-      margin-left:10px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      background-color: #dddee0;
-      color:#044383;
-      border: 2px solid #044383; /* Default border */
-      border-left: 6px solid #044383; /* Thicker left border */
-      border-bottom: 6px solid #044383; /* Thicker bottom border */
-      border-radius: 10px; /* Optional: Round corners */
-      background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    }
-  }
-
-
    /* Leadership Team*/
 
    about2 .about2container {
@@ -454,16 +263,212 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
   }
 
-  /* Responsive */
-  @media (max-width: 600px) {
+/* Responsive */
+@media (max-width: 600px) {
+
+  abtheadline .headlinecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 20px;
+    position: relative;
+    width: 95%;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: #044383;
+    color:white;
+    padding-left:20px;
+  }
+  abtheadline .headlinecontainer h2{
+    font-size: 25px;
+  }
+
+  about .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    height:100%;
+    align-items: center;
+    width: 90%;
+  }
+
+  about .about-left{
+    height:30%;
+    padding: 5px;
+    text-align: justify;
+    border-radius: 15px;
+  }
+  about .about-left img{
+    height:100%;
+    width:100%;
+  }
+
+  about .about-right{
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 15px;
+    color:#044383;
+    line-height: 1.75;
+  }
+  about .about-right h1{
+    font-size: 20px;
+  }
+
+about1 .aboutcontainer1 {
+  padding: 40px 10px 40px 10px;
+  height:100%;
+  width:95%;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  position: relative;
+  align-items: center;
+
+}
+
+about1 .aboutcontainer1 h1 {
+  position: relative; /* Enable positioning for pseudo-element */
+  font-size: 2rem; /* Adjust font size as needed */
+  margin: 5px 0; /* Add space around the heading */
+  font-size: 25px;
+
+}
+
+about1 .aboutcontainer1 h1::after {
+  content: ""; /* Creates the underline */
+  position: absolute;
+  bottom: -12px; /* Distance below the text */
+  left: 50%; /* Start at the center */
+  transform: translateX(-50%); /* Center align */
+  width: 45%; /* Width of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: red; /* Color of the underline (matches text color) */
+  border-radius: 5px; /* Optional: Rounds the edges of the underline */
+}
+
+about1 .offering1 {
+  padding: 20px 5px 5px 5px;
+  height:30%;
+  display:flex;
+  align-items: center;
+
+}
+about1 .offering11 {
+  height:10vh;
+  width:30%;
+  font-size: 15px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color:#044383;
+  margin-left: 5px;
+  border: 2px solid #044383; /* Default border */
+  border-left: 6px solid #044383; /* Thicker left border */
+  border-bottom: 6px solid #044383; /* Thicker bottom border */
+  border-radius: 10px; /* Optional: Round corners */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+about1 .offering12 {
+  height:10vh;
+  width:30%;
+  font-size: 15px;
+  margin-left: 10px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+   color:#044383;
+   border: 2px solid #044383; /* Default border */
+   border-left: 6px solid #044383; /* Thicker left border */
+   border-bottom: 6px solid #044383; /* Thicker bottom border */
+   border-radius: 10px; /* Optional: Round corners */
+   background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+about1 .offering13 {
+  height:10vh;
+  width:30%;
+  font-size: 15px;
+  margin-left: 10px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color:#044383;
+  border: 2px solid #044383; /* Default border */
+  border-left: 6px solid #044383; /* Thicker left border */
+  border-bottom: 6px solid #044383; /* Thicker bottom border */
+  border-radius: 10px; /* Optional: Round corners */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+about1 .offering2 {
+  padding: 10px 5px 5px 5px;
+  height:30%;
+  display:flex;
+}
+about1 .offering21 {
+  height:10vh;
+  width:30%;
+  font-size: 15px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 5px;
+  color:#044383;
+  border: 2px solid #044383; /* Default border */
+  border-left: 6px solid #044383; /* Thicker left border */
+  border-bottom: 6px solid #044383; /* Thicker bottom border */
+  border-radius: 10px; /* Optional: Round corners */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+about1 .offering22 {
+  height:10vh;
+  width:30%;
+  font-size: 15px;
+  margin-left: 10px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color:#044383;
+  border: 2px solid #044383; /* Default border */
+  border-left: 6px solid #044383; /* Thicker left border */
+  border-bottom: 6px solid #044383; /* Thicker bottom border */
+  border-radius: 10px; /* Optional: Round corners */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+about1 .offering23 {
+  height:10vh;
+  width:30%;
+  font-size: 15px;
+  margin-left:10px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #dddee0;
+  color:#044383;
+  border: 2px solid #044383; /* Default border */
+  border-left: 6px solid #044383; /* Thicker left border */
+  border-bottom: 6px solid #044383; /* Thicker bottom border */
+  border-radius: 10px; /* Optional: Round corners */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
     about2 .about2container {
-      padding: 20px 10px 10px 10px;
-      height:45vh;
+      padding: 40px 10px 40px 10px;
+      height:100%;
+      width:95%;
       box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
       position: relative;
-     
       text-align: top;
+      align-items: center;
     }
+
+
   
     about2 .about2container h1 {
       position: relative; /* Enable positioning for pseudo-element */
@@ -487,7 +492,7 @@
    
   
     about2 .about2container1 {
-      height:25vh;
+      height:100%;
       position: relative;
       display:flex;
       padding-top: 25px;
@@ -497,8 +502,8 @@
     }
   
     about2 .about2container11 {
-      height:25vh;
-      width:30%;
+      height:30vh;
+      width:27%;
       font-size: 15px;
       align-items: center;
       align-content: center;
@@ -513,8 +518,8 @@
       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
     }
     about2 .about2container12 {
-      height:25vh;
-      width:30%;
+      height:30vh;
+      width:27%;
       font-size: 15px;
       align-items: center;
       align-content: center;
@@ -529,8 +534,8 @@
       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
     }
     about2 .about2container13 {
-      height:25vh;
-      width:30%;
+      height:30vh;
+      width:27%;
       font-size: 15px;
       align-items: center;
       align-content: center;
@@ -544,4 +549,16 @@
       background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
     }  
+    about2 .about2container11 img{
+      width:70px;
+      height:70px;
+    }
+    about2 .about2container12 img{
+      width:70px;
+      height:70px;
+    }
+    about2 .about2container13 img{
+      width:70px;
+      height:70px;
+    }
   }
