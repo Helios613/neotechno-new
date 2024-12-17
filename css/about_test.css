@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  height: 10vh;
+  height: 12vh;
   position: relative;
-  padding-top: 105px;
+  padding-top: 40px;
   padding-left:40px;
   background-color: #044383;
   color:white;
@@ -276,7 +276,6 @@ about .about-left{
     padding-top: 60px;
     padding-bottom: 10px;
     background-color: #044383;
-    
     color:white;
     padding-left:20px;
   }
@@ -300,7 +299,7 @@ about .about-left{
     padding: 5px;
     text-align: justify;
     border-radius: 15px;
-    animation: slideInFromLeft 0.75s ease-out;
+    
   }
   about .about-left img{
     height:100%;
@@ -313,7 +312,7 @@ about .about-left{
     font-size: 15px;
     color:#044383;
     line-height: 1.75;
-    animation: slideInFromRight 0.75s ease-out;
+   
   }
   
   about .about-right h1{
@@ -353,12 +352,12 @@ about .about-left{
   about1 .offering1
   {
     padding-top:40px;
-    animation: slideInFromLeft 0.75s ease-out;
+    
   }
   about1 .offering2
   {
     padding-bottom:40px;
-    animation: slideInFromRight 0.75s ease-out;
+    
   }
   about1 .offering1 , about1 .offering2{
 
@@ -452,7 +451,7 @@ about .about-left{
     border-radius: 10px; /* Optional: Round corners */
     background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    animation: slideInFromLeft 0.75s ease-out;
+   
   }
   about2 .about2container12 {
     height:25vh;
@@ -469,7 +468,7 @@ about .about-left{
     border-radius: 10px; /* Optional: Round corners */
     background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    animation: slideInFromRight 0.75s ease-out;
+    
   }
   about2 .about2container13 {
     height:25vh;
@@ -486,7 +485,7 @@ about .about-left{
     border-radius: 10px; /* Optional: Round corners */
     background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for a 3D effect */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
-    animation: slideInFromBottom 0.75s ease-out;
+  
   }  
   about2 .about2container11 img, 
   about2 .about2container12 img,
@@ -494,4 +493,61 @@ about .about-left{
     width:70px;
     height:70px;
   }
+
+
+  .about-left,
+  .offering11,
+  .offering21, 
+  .about2container11
+{
+  
+  animation: slideInFromLeft 1s ease-out;
+  }
+
+  .about-right,
+  .offering12,
+  .offering22,
+  .about2container12{
+  opacity: 0;
+  animation: slideInFromRight 1s ease-out;
+  opacity: 1
+  }
+
+ .offering13,
+  .offering23,
+  .about2container13{
+    opacity: 0;
+    animation: slideInFromBottom 1s ease-out;
+    opacity: 1
+  }
+
+/* Visible state (triggered when in viewport) */
+.animate-visible {
+  opacity: 1;
+  animation: slideInFromLeft 1s ease-out;
+}
+.animate-visible-right {
+  opacity: 1;
+  animation: slideInFromRight1 1s ease-out;
+}
+.animate-visible-bottom {
+  opacity: 1;
+  animation: slideInFromBottom1 1s ease-out;
+}
+
+/* Specific animations (if needed) */
+@keyframes slideInFromLeft1 {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight1 {
+  0% { transform: translateX(200%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideInFromBottom1 {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
 }

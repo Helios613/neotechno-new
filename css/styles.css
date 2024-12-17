@@ -20,12 +20,10 @@ headline .headlinecontainer {
   justify-content: left;
   height: 10vh;
   position: relative;
-
-  padding-top: 109px;
+  padding-top: 105px;
   padding-left:40px;
   background-color: #044383;
   color:white;
-  
 }
 
 /* Header Styles */
@@ -759,8 +757,8 @@ mainfile .content-box button:hover {
     height: 20px;
     position: relative;
     width: 95%;
-    padding-top: 60px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: #044383;
     color:white;
     padding-left:20px;
@@ -768,6 +766,7 @@ mainfile .content-box button:hover {
   headline .headlinecontainer h2{
     font-size: 25px;
   }
+
 
   header {
     position: fixed;
@@ -782,11 +781,9 @@ mainfile .content-box button:hover {
   }
   header .logo-bar {
     height: 30px;
-    width:96%;
+    width:100%;
     text-align: left;
     padding-left: 10px;
-   
-    justify-content:center;
     background-color: white;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -1054,5 +1051,39 @@ display: inline-block;
          display: inline;
          color: white;
          
-     }
-   }
+     }    
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for the form sliding in from the bottom */
+@keyframes slideInFromBottom {
+from {
+transform: translateY(100%);
+opacity: 0;
+}
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+/* Animation for the form sliding in from the Right */
+@keyframes slideInFromRight {
+from {
+transform: translateX(200%);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}

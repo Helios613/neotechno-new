@@ -12,17 +12,17 @@
       display: flex;
       align-items: center;
       justify-content: left;
-      height: 20px;
+      height: 10vh;
       position: relative;
-      padding-top: 0px;
+      padding-top: 105px;
       padding-left:40px;
       background-color: #044383;
-      color:white; 
+      color:white;
     }
 
   career .container {
-    padding: 10px 20px 40px 40px;
-    height:85vh;
+    padding: 90px 20px 40px 40px;
+    height:90vh;
     box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
   }
   
@@ -33,18 +33,17 @@
   }
   
   career .career-right{
-    padding: 20px 20px 40px 10px;
+    padding: 20px 20px 40px 20px;
     text-align: justify;
     font-size: 15px;
     color:#044383;
     line-height: 1.75;
+    
   }
 
 
-    @media (max-width: 600px) {
-
-      
-      headline .headlinecontainer {
+  @media (max-width: 600px) {
+    headline .headlinecontainer {
         display: flex;
         align-items: center;
         justify-content: left;
@@ -61,6 +60,7 @@
         font-size: 25px;
       }
 
+      
     career .container {
       display: flex;
       flex-direction: column;
@@ -76,6 +76,7 @@
       padding: 10px 20px 10px 20px;
       text-align: justify;
       border-radius: 15px;
+      animation: slideInFromLeft 0.75s ease-out;
     }
     career .career-left img{
       height:100%;
@@ -90,6 +91,7 @@
       line-height: 1.75;
       height:100%;
       width: 100%;
+      animation: slideInFromRight 0.75s ease-out;
     
     }
     career .career-right h1{
@@ -108,7 +110,7 @@
     </div>  
   <div class="logo-bar">
     <div class="logo">
-      <a href="index.html"><img src="images\Logo1.png" alt="Company Logo"></a>
+      <a href="index.html"><img src="images\logo1.png" alt="Company Logo"></a>
       <img src="images\logo.png" alt="Company Logo"> 
     </div>
     <div class="menu-toggle" id="mobile-menu">
